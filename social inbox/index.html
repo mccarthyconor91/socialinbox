@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link href="stylesheet.css" rel="stylesheet"/>
+    <title>Home</title>
+</head>
+<body>
+
+
+  <nav class="navbar">
+    <div class="logo-container">
+      <a href="index.html"><img class="nav-logo" src="random_logo-removebg-preview.png"/></a>
+      <a href="index.html"><h2>Social Inbox</h2></a>
+    </div>
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="blog.html" class="nav-link">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="pricing.html" class="nav-link">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a href="contact.html" class="nav-link">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a href="signup.html" class="nav-link" id="main-btn">Sign Up</a>
+      </li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+
+  <section class="hero">
+  <div class="hero-container">
+    <div class="hero-text-container"> 
+      <h1>Connect with your audience.</h1>
+      <h2>Use the power of email marketing to become an influencer.</h2>
+      <div class="hero-buttons">
+        <a href="signup.html"><button>Sign Up</button></a>
+        <a href="blog.html"><button>Learn More</button></a>
+      </div>
+    </div>
+    <div class="image-side">
+      <img id="hero-image" src="./collage-people-using-reels.jpg">
+    </div>
+  </div>
+  </section>
+
+  <section class="first-section">
+    <div class="first-section-container">
+     <div class="first-section-text">
+      <h2>Turn your passion into income.</h2>
+      <p class="section-paragraph">With Social Inbox, you can effortlessly build an email list of your loyal followers and leverage it to promote your products or services directly to their inboxes. Discover the endless opportunities that await you as you harness the potential of email marketing, engage with your customers on a deeper level, and unlock new revenue streams. Join us today and take control of your online success!</p>
+     </div>
+     <div class="first-section-img">
+     <img src="influencer.jpg">
+    </div>
+  </div>
+  </section>
+
+
+  <section class="questions">
+    <div class="questions-container">
+      <div class="questions-info">
+        <h2>Learn more about Social Inbox and how to connect with your audience.</h2>
+      </div>
+    <div class="questions-side">
+      <ul>
+        <div class="question-style">
+          <div class="question-title" onClick="questionOne()">
+            <li>Why do I need this?</li>
+            <h2 id="arrow"> > </h2>
+          </div>
+          <p id="answerOne" class="hide"></p>
+        </div>
+        <div class="question-style">
+          <div class="question-title" onClick="questionTwo()">
+            <li>Can I sell products from Social Inbox?</li>
+            <h2 id="arrowTwo"> > </h2>
+          </div>
+          <p id="answerTwo" class="hide"></p>
+        </div>
+        <div class="question-style">
+          <div class="question-title" onClick="questionThree()">
+            <li>Does it matter how many followers I have?</li>
+            <h2 id="arrowThree"> > </h2>
+          </div>
+          <p id="answerThree" class="hide"></p>
+        </div>
+        <div class="question-style-last">
+          <div class="question-title" onClick="questionFour()">
+            <li>How many emails can I send a month?</li>
+            <h2 id="arrowFour"> > </h2>
+          </div>
+          <p id="answerFour" class="hide"></p>
+        </div>
+      </ul>
+    </div>
+  </section>
+
+
+  <section class="pricing">
+    <div class="pricing-info">
+      <h2>Pay annually and save 10%</h2>
+      <label class="switch">
+      <input type="checkbox">
+      <span class="slider" onClick="changePrice()"></span>
+      </label>
+    </div>
+
+    <div class="pricing-container">
+      <div class="pricing-box">
+        <h2>Basic</h2>
+        <p>Everything you need to get started.</p>
+        <div class="total-price">
+          <div class="dollar">$</div>
+          <div id="basic" class="pricing-tier">19</div>
+          <div class="month"> /month</div>
+        </div>
+      </div>
+
+      <div class="pricing-box">
+        <div class="pricing-box-content">
+        <h2>Influencer</h2>
+        <p>Perfect for those who make a living from their content.</p>
+        <div class="total-price">
+          <div class="dollar">$</div>
+          <div class="pricing-tier" id="influencer">49</div>
+          <div class="month"> /month</div>
+        </div>
+      </div>
+      </div>
+
+      <div class="pricing-box">
+        <h2>Pro</h2>
+        <p>Ideal for larger influencers or businesses.</p>
+        <div class="total-price">
+          <div class="dollar">$</div>
+          <div id="pro" class="pricing-tier">199</div>
+          <div class="month"> /month</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-table-container">
+      <div class="table-btn">
+        <button id="table-btn" onclick="showTable()">View full feature comparison</button>
+      </div>
+      <div class="table-container">
+        <table id="table" class="hide">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Free</th>
+              <th>Basic</th>
+              <th>Influencer</th>
+              <th>Pro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-features">Landing Page</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="table-features">Custom Domain</td>
+              <td>No</td>
+              <td>No</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="table-features">Sell Products</td>
+              <td>No</td>
+              <td>3.5% transaction fee</td>
+              <td>3.5% transaction fee</td>
+              <td>2% transaction fee</td>
+            </tr>
+            <tr>
+              <td class="table-features">Customer Support</td>
+              <td>Email support only</td>
+              <td>Chat and email support (24hr Response)</td>
+              <td>Chat and email support (12hr Response)</td>
+              <td>Priority chat, email + phone support</td>
+            </tr>
+            <tr>
+              <td class="table-features">Split Testing</td>
+              <td>No</td>
+              <td>No</td>
+              <td>No</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td class="table-features">Integrations</td>
+              <td>No</td>
+              <td>Yes</td>
+              <td>Yes</td>
+              <td>Yes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="reviews-container">
+      <div class="reviews-row">
+
+        <div class="review-box">
+          <div class="review-box-header">
+            <img src="jon.jpg">
+            <div class="box-header-text">
+              <h2>Jon Rivers</h2>
+              <h3> / Content Creator</h3>
+            </div>
+          </div>
+          <p>Social Inbox has been a game changer for my business. The landing page templates are incredible and easy to use. I've seen a big increase in engagement since signing up and looking forward to more growth.</p>
+        </div>
+
+        <div class="review-box">
+          <div class="review-box-header">
+            <img src="sarah.jpg">
+            <div class="box-header-text">
+              <h2>Sarah Pineman</h2>
+              <h3>/ Artist</h3>
+            </div>
+          </div>
+          <p>Since I have an art page of only a few hundred followers, I wanted a way to share more stories about my art and process. Since joining Social Inbox I have built my list and sent regular emails, I am now getting ready to host my first virtual workshop next month.</p>
+        </div>
+      
+        <div class="review-box">
+          <div class="review-box-header">
+            <img src="steffy.jpg">
+            <div class="box-header-text">
+              <h2>Steffy Hogg</h2>
+              <h3>/ YouTuber</h3>
+            </div>
+          </div>
+          <p>I was sceptical about joining Social Inbox at first, I thought email was dead and couldn't see the value in joining. After 6 months my email list is at 5,000 and growing each month, by leveraging my list I've been able to start a paid membership program which I never would have been able to launch successfully just through my Instagram.</p>
+        </div>
+      </div>
+      
+      <div class="reviews-row">
+
+        <div class="review-box">
+          <div class="review-box-header">
+            <img src="jessica.jpg">
+            <div class="box-header-text">
+              <h2>Jessica Roberts</h2>
+              <h3>/ TikTok Influencer</h3>
+            </div>
+          </div>
+          <p>I wish I started my email list sooner, it's been an incredibly powerful tool for me and Social Inbox have creators and online businesses in mind with every feature they have.</p>
+        </div>
+
+        <div class="review-box">
+          <div class="review-box-header">
+            <img src="carl.jpg">
+            <div class="box-header-text">
+              <h2>Carl Hayes</h2>
+              <h3>/ DIY Content Creator</h3>
+            </div>
+          </div>
+          <p>After a month using social inbox I added an extra $800 income through selling my digital products. I wish I did this sooner.</p>
+        </div>
+      
+        <div class="review-box">
+          <div class="review-box-header">
+            <img src="timothy.jpg">
+            <div class="box-header-text">
+              <h2>Timothy Rowe</h2>
+              <h3>/ Content Creator</h3>
+            </div>
+          </div>
+          <p>Social Inbox is a brilliant platform, it's super easy to use and I got everything set up in minutes. Plus the customer service has been second to none.</p>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+</body>
+
+<footer>
+  <div class="footer-container">
+  <div class="socials-container">
+    <div class="social-media">
+      <img src="icons8-instagram-96.png">
+      <img src="icons8-facebook-messenger-96.png">
+      <img src="icons8-tiktok-96.png">
+      <img src="icons8-youtube-96.png">
+      <img src="icons8-twitter-96.png">
+    </div>
+    <h4>© 2023 Social Inbox. All rights reserved.</h4>
+  </div>
+  <div class="footer-links">
+    <ul>
+      <h4>Company</h4>
+      <li>About</li>
+      <li>Careers</li>
+      <li>News</li>
+      <li>Terms and conditions</li>
+      <li>Privacy Policy</li>
+    </ul>
+    <ul>
+      <h4>Support</h4>
+      <li>Help Center</li>
+      <li>API Documentation</li>
+      <li>Status</li>
+    </ul>
+  </div>
+</div>
+</footer>
+<script src="index.js"></script>
+</html>

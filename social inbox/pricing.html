@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link href="pricing-stylesheet.css" rel="stylesheet"/>
+    <title>Document</title>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo-container">
+      <a href="index.html"><img class="nav-logo" src="random_logo-removebg-preview.png"/></a>
+      <a href="index.html"><h2>Social Inbox</h2></a>
+    </div>
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a href="blog.html" class="nav-link">About</a>
+      </li>
+      <li class="nav-item">
+        <a href="pricing.html" class="nav-link">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a href="contact.html" class="nav-link">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a href="signup.html" class="nav-link" id="main-btn">Sign Up</a>
+      </li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+<section class="pricing-main">
+  <div class="pricing-main-container">
+  <h2>Social Inbox is a worthy investment for any influencer or content creator. Here's why: </h2>
+  <p>Welcome to Social Inbox, the ultimate email marketing platform designed specifically for creators and influencers. We understand the power of email marketing in helping you connect with your audience and drive revenue for your digital products. With Social Inbox, we provide you with the tools and resources to effectively promote and sell your products through email campaigns.</p>
+  <p>Our platform empowers you to build a loyal customer base by leveraging the potential of email marketing. Through personalized and targeted emails, you can reach your audience directly in their inboxes, creating a strong connection and fostering customer loyalty. Whether you're a content creator, influencer, or entrepreneur, Social Inbox is here to support your growth and maximize your earning potential.</p>
+  <p>With Social Inbox, you have access to a wide range of features tailored to your needs. From customizable email templates and drag-and-drop builders to advanced segmentation and A/B testing, our platform offers the flexibility and functionality to elevate your email marketing game.
+  <p>We have carefully designed plans to accommodate creators and influencers at every stage of their journey. Whether you're just starting or have a substantial audience, we have a plan that suits your requirements and budget.</p>
+</div>
+</section>
+<section class="pricing">
+  <div class="pricing-info">
+    <h2>Pay annually and save 10%</h2>
+    <label class="switch">
+    <input type="checkbox">
+    <span class="slider" onClick="changePrice()"></span>
+    </label>
+  </div>
+
+  <div class="pricing-container">
+    <div class="pricing-box">
+      <h2>Basic</h2>
+      <p>Everything you need to get started.</p>
+      <div class="total-price">
+        <div class="dollar">$</div>
+        <div id="basic" class="pricing-tier">19</div>
+        <div class="month"> /month</div>
+      </div>
+    </div>
+
+    <div class="pricing-box">
+      <div class="pricing-box-content">
+      <h2>Influencer</h2>
+      <p>Perfect for those who make a living from their content.</p>
+      <div class="total-price">
+        <div class="dollar">$</div>
+        <div class="pricing-tier" id="influencer">49</div>
+        <div class="month"> /month</div>
+      </div>
+    </div>
+    </div>
+
+    <div class="pricing-box">
+      <h2>Pro</h2>
+      <p>Ideal for larger influencers or businesses.</p>
+      <div class="total-price">
+        <div class="dollar">$</div>
+        <div id="pro" class="pricing-tier">199</div>
+        <div class="month"> /month</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pricing-table-container">
+    <div class="table-container">
+      <table id="table" class="hide">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Free</th>
+            <th>Basic</th>
+            <th>Influencer</th>
+            <th>Pro</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table-features">Landing Page</td>
+            <td data-label="Free">Yes</td>
+            <td data-label="Basic">Yes</td>
+            <td data-label="Influencer">Yes</td>
+            <td data-label="Pro">Yes</td>
+          </tr>
+          <tr>
+            <td class="table-features">Custom Domain</td>
+            <td data-label="Free">No</td>
+            <td data-label="Basic">No</td>
+            <td data-label="Influencer">Yes</td>
+            <td data-label="Pro">Yes</td>
+          </tr>
+          <tr>
+            <td class="table-features">Sell Products</td>
+            <td data-label="Free">No</td>
+            <td data-label="Basic">3.5% transaction fee</td>
+            <td data-label="Influencer">3.5% transaction fee</td>
+            <td data-label="Pro">2% transaction fee</td>
+          </tr>
+          <tr>
+            <td class="table-features">Customer Support</td>
+            <td data-label="Free">Email support only</td>
+            <td data-label="Basic">Chat and email support (24hr Response)</td>
+            <td data-label="Influencer">Chat and email support (12hr Response)</td>
+            <td data-label="Pro">Priority chat, email + phone support</td>
+          </tr>
+          <tr>
+            <td class="table-features">Split Testing</td>
+            <td data-label="Free">No</td>
+            <td data-label="Basic">No</td>
+            <td data-label="Influencer">No</td>
+            <td data-label="Pro">Yes</td>
+          </tr>
+          <tr>
+            <td class="table-features">Integrations</td>
+            <td data-label="Free">No</td>
+            <td data-label="Basic">Yes</td>
+            <td data-label="Influencer">Yes</td>
+            <td data-label="Pro">Yes</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+</body>
+<footer>
+  <div class="footer-container">
+  <div class="socials-container">
+    <div class="social-media">
+      <img src="icons8-instagram-96.png">
+      <img src="icons8-facebook-messenger-96.png">
+      <img src="icons8-tiktok-96.png">
+      <img src="icons8-youtube-96.png">
+      <img src="icons8-twitter-96.png">
+    </div>
+    <h4>© 2023 Social Inbox. All rights reserved.</h4>
+  </div>
+  <div class="footer-links">
+    <ul>
+      <h4>Company</h4>
+      <li>About</li>
+      <li>Careers</li>
+      <li>News</li>
+      <li>Terms and conditions</li>
+      <li>Privacy Policy</li>
+    </ul>
+    <ul>
+      <h4>Support</h4>
+      <li>Help Center</li>
+      <li>API Documentation</li>
+      <li>Status</li>
+    </ul>
+  </div>
+</div>
+</footer>
+<script src="index.js"></script>
+</html>

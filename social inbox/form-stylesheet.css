@@ -1,0 +1,142 @@
+* {
+    font: 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+h1 {
+    color: black;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+span {
+    text-decoration: underline;
+}
+
+.form-side {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.details-side {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: 35%;
+    background-image: linear-gradient(to left, #2596be, #0e61af);
+    background-size: 300%;
+    animation: bg-animation 5s infinite alternate;
+    color: white;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+
+input {
+    min-height: 45px;
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: #0f82c5 solid 2px;
+}
+
+input::placeholder {
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+#error {
+    max-width: 400px;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.labels-container {
+    max-width: 400px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.checkbox-container input {
+    margin-bottom: 1px;
+    
+}
+
+
+#submit {
+    margin-top: 10px;
+    min-width: 100%;
+    border-radius: 20px;
+    background-color: #6cccdf;
+    border: #0f82c5 solid 2px;
+    color: white;
+    min-height: 45px;
+    max-width: 350px;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+
+.details-side ul {
+    font-size: 1.5rem;
+}
+
+.details-side li {
+    margin-top: 70px;
+    list-style-type: disc;
+}
+
+.details-side p {
+    font-size: 16px;
+}
+
+@media (max-width: 1090px) {
+      body {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-side {
+        width: 100vw;
+      }
+
+      .details-side {
+        width: 100vw;
+      }
+ }
